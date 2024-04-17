@@ -8,10 +8,10 @@ export default function Movies({movies}) {
             <h1 className="text-3xl font-bold">IMDb Clone</h1>
             <nav>
             <ul className="flex space-x-4">
-                <li><a href="#" className="hover:underline">Home</a></li>
-                <li><a href="#" className="hover:underline">Movies</a></li>
-                <li><a href="#" className="hover:underline">TV Shows</a></li>
-                <li><a href="#" className="hover:underline">Celebrities</a></li>
+                <li><a href="" className="hover:underline">Home</a></li>
+                <li><a href="" className="hover:underline">Movies</a></li>
+                <li><a href="" className="hover:underline">TV Shows</a></li>
+                <li><a href="" className="hover:underline">Celebrities</a></li>
             </ul>
             </nav>
         </header>
@@ -22,7 +22,7 @@ export default function Movies({movies}) {
                 {movies.slice(0, 5).map((movie, i) => (
                 <Card key={i} className="bg-gray-800 py-4">
                     <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-                    <h4 className="font-bold text-lg">{movie.title}</h4>
+                    <h4 className="font-bold text-xl text-white">{movie.title}</h4>
                     </CardHeader>
                     <CardBody className="overflow-visible py-2">
                     <img
