@@ -33,7 +33,7 @@ export default function Movies({ movies }) {
           <h2 className="text-2xl mb-3">Featured Movies</h2>
           <div className="grid grid-cols-5 gap-4">
             {movies.slice(0, 5).map((movie, i) => (
-              <button key={i} onClick={() => openModal(movie)} className="w-[500px] h-[400px]">
+              <button key={i} onClick={() => openModal(movie)} className="w-[350px] h-[300px]">
                 <Card className="bg-gray-800 w-full h-full py-4 cursor-pointer">
                   <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                     <h4 className="font-bold text-xl text-white">{movie.title}</h4>
